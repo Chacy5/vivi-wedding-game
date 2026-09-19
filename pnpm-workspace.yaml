@@ -1,0 +1,7 @@
+# Netlify uses pnpm 11. Explicitly approve required native build steps.
+strictDepBuilds: true
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+  workerd: true
