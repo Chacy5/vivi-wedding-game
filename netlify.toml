@@ -3,3 +3,8 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Explicitly install Netlify's Next.js adapter. Without it a successful
+# `next build` can be deployed as an empty static site and show a 404.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
